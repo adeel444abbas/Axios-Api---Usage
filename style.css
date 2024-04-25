@@ -3,7 +3,6 @@
 Variables
 ===============
 */
-
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
@@ -48,7 +47,8 @@ Variables
   =============== 
   Global Styles
   ===============
-  */
+*/
+
 .d-none {
   display: none;
 }
@@ -132,11 +132,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-.btn-container p {
-  margin-bottom: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
 
 .btn-container button {
   margin: 1rem;
@@ -149,9 +144,6 @@ p {
   color: var(--clr-white);
   letter-spacing: var(--spacing);
   cursor: pointer;
-}
-.btn-container button:disabled {
-  cursor: not-allowed;
 }
 
 /*
@@ -251,4 +243,7 @@ p {
   color: var(--clr-white);
   letter-spacing: var(--spacing);
   cursor: pointer;
+}
+.disp-none{
+  display: none;
 }
