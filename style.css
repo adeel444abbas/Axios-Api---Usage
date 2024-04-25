@@ -101,29 +101,7 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-3);
 }
-/* @media screen and (min-width: 800px) {
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-} */
+
 /*  global classes */
 
 /* section */
@@ -141,35 +119,9 @@ p {
 
 /*
   =============== 
-  Search
-  ===============
-  */
-.search-form {
-  width: 90vw;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-}
-.form-input {
-  width: 100%;
-  border: none;
-  border-bottom: 3px solid var(--clr-grey-8);
-  max-width: 600px;
-  background: transparent;
-  padding: 1rem;
-  font-size: 1rem;
-  color: var(--clr-grey-3);
-  text-transform: uppercase;
-  letter-spacing: var(--spacing);
-  margin-top: 1rem;
-}
-
-/*
-  =============== 
   Buttons
   ===============
-  */
+*/
 
 .btn-container {
   width: 90vw;
@@ -253,17 +205,7 @@ p {
   border-radius: var(--radius);
   padding: 1rem 2rem;
 }
-.showError{
-  width: 50vw;
-  margin: 0 auto;
-  text-align: center;
-  background-color: red;
-  color: #fff;
-  border-radius: var(--radius);
-  padding: 1rem 2rem;
-  font-weight: 500;
-  font-size: 20px;
-}
+
 .title {
   line-height: 1.5;
   margin-bottom: 0.25rem;
@@ -271,22 +213,6 @@ p {
 .info {
   margin-bottom: 0.5rem;
   color: var(--clr-grey-5);
-}
-
-.read-link {
-  font-size: 0.85rem;
-  margin-right: 0.75rem;
-  text-transform: capitalize;
-  color: var(--clr-primary-5);
-}
-
-.remove-btn {
-  background: transparent;
-  color: var(--clr-red-dark);
-  border-color: transparent;
-  cursor: pointer;
-  text-transform: capitalize;
-  font-size: 0.85rem;
 }
 
 .no-data {
@@ -301,6 +227,7 @@ p {
 .pagination{
   text-align: center;
 }
+
 .prev-page{
   margin: 1rem;
   padding: 0.25rem 0.5rem;
@@ -325,4 +252,3 @@ p {
   letter-spacing: var(--spacing);
   cursor: pointer;
 }
-
