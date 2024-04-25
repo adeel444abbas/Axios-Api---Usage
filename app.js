@@ -14,20 +14,11 @@ const removeLoader = () => {
   document.querySelector(".loading").classList.remove("d-block");
 };
 
-const handleError = (error) => {
-  removeLoader();
-  let body = document.querySelector("body");
-  let para = document.createElement("p");
-  para.setAttribute("class", "showError");
-  para.textContent = `${error}, An Error occured, while loading data`;
-  body.appendChild(para);
-};
-
 const handlePosts = async () => {
   addLoader();
   document.querySelector(".stories").innerHTML = "";
   try {
-    let response = await axios.get("https://hn.algolia.com/api/v1/search"); // https://hn.algolia.com/api/v1/search
+    let response = await axios.get("https://.algolia.com/api/v1/search");  // https://hn.algolia.com/api/v1/search
     console.log(response);
     if (response.status == 200) {
       removeLoader();
@@ -50,7 +41,9 @@ const handlePosts = async () => {
     document.querySelector(".stories").innerHTML = showData;
     updatePage(data.length);
   } catch (error) {
-    handleError(error);
+    removeLoader();
+    alert(`${error}, An Error occured, while loading data`);
+    throw Error(`${error}, An Error occured, while loading data`);
   }
 };
 
@@ -74,4 +67,3 @@ previousBtn.addEventListener("click", () => {
     handlePosts();
   }
 });
-
